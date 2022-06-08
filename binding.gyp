@@ -11,7 +11,7 @@
         "addon/dump_animation.cc",
       ],
       "include_dirs": [
-        "vendor/fbx-sdk/include",
+        "/opt/fbx-sdk/include",
         "<!(node -e \"require('nan')\")"
       ],
       "xcode_settings": {
@@ -25,7 +25,7 @@
       'conditions': [
         ["OS == 'mac'", {
           "libraries": [
-            "../vendor/fbx-sdk/lib/clang/release/libfbxsdk.a",
+            "/opt/fbx-sdk/lib/clang/release/libfbxsdk.a",
             #DISABLE: "-rpath '@loader_path/../../vendor/fbx-sdk/lib/clang/release'"
           ],
         }]
@@ -38,11 +38,11 @@
         "test/utils/init.cc",
       ],
       "include_dirs": [
-        "vendor/fbx-sdk/include",
+        "/opt/fbx-sdk/include",
         "<!(node -e \"require('nan')\")"
       ],
       "libraries": [
-        "../vendor/fbx-sdk/lib/clang/release/libfbxsdk.a",
+        "/opt/fbx-sdk/lib/clang/release/libfbxsdk.a",
       ],
       "xcode_settings": {
         "CLANG_CXX_LANGUAGE_STANDARD": "c++11",
